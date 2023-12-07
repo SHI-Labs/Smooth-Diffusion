@@ -21,7 +21,7 @@ This repository is the official Pytorch implementation for [Smooth Diffusion](ht
 
 <p align="center">
 <img src="asserts/Picture1.jpg" width="1080px"/>
-<strong>Smooth Diffusion</strong> dramatically aids in: 1) improving the continuity of transitions in image interpolation, 2) reducing approximation errors in image inversion, and 3) better preserving unedited contents in image editing.
+Our method formally introduces latent space smoothness to diffusion models like Stable Diffusion. This smoothness dramatically aids in: 1) improving the continuity of transitions in image interpolation, 2) reducing approximation errors in image inversion, and 3) better preserving unedited contents in image editing.
 </p>
 
 ## News
