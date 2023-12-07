@@ -15,6 +15,10 @@ This repository is the official Pytorch implementation for [Smooth Diffusion](ht
 > [Gao Huang](https://www.gaohuang.net),
 > [Humphrey Shi](https://www.humphreyshi.com)
 
+
+https://github.com/SHI-Labs/Smooth-Diffusion/assets/53193040/b5fcf520-1b8b-4f17-97a3-1a06d440ec25
+
+
 <p align="center">
 <strong>Smooth Diffusion</strong> is a new category of diffusion models that is simultaneously high-performing and smooth.
 </p>
