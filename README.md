@@ -1,5 +1,6 @@
 # Smooth Diffusion
 
+<<<<<<< HEAD
 This repository is the official Pytorch implementation for [Smooth Diffusion](https://arxiv.org/pdf/2312).
 
 [![Project Page](https://img.shields.io/badge/Project-Website-orange)]([https://.github.io/MotionDirector](https://shi-labs.github.io/smooth-diffusion-webpage/)) [![arXiv](https://img.shields.io/badge/arXiv-SmoothDiffusion-b31b1b.svg)](https://arxiv.org/abs/2312) 
@@ -83,3 +84,10 @@ If you find our work helpful, please **star 🌟** this repo and **cite 📑** o
 
 ## Contact
 guo-jy20 at mails dot tsinghua dot edu dot cn
+=======
+## Acknowledgments
+Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
+
+## Website License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+>>>>>>> webpage/master
