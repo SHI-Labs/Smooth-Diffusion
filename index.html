@@ -148,7 +148,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <strong>Smooth Diffusion</strong>, a new category of diffusion models that can be simultaneously high-performing and smooth
+        <strong>Smooth Diffusion</strong>, a new category of diffusion models that is simultaneously smooth and high-performing.
       </h2>
     </div>
   </div>
@@ -217,17 +217,18 @@
   
 </section>  -->
 
-
+<section class="section">
 <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
     <h2 class="title is-3">Methodology</h2>
     <div>
   <img width="800" src="static/images/method-q.jpg">
-  <figcaption> Illustration of Smooth Diffusion 
+  <figcaption> Smooth Diffusion (c) enforces the ratio between the variation of the input latent and the variation of the output prediction is a constant. We propose Training-time Smooth Diffusion (d) to optimize a "single-step snapshot" of the variation constraint in (c). DM: Diffusion model. 
 </figcaption>
 </div>
   </div>
 </div>
+</section>
 
 
 <!-- results -->
@@ -244,6 +245,7 @@
 
     <!-- image interpolattion -->
         <h1 class="title is-3">1. Latent Space Interpolation of Images</h1>
+        Use the Smooth LoRA trained atop Stable Diffusion V1.5.
       
         <div>
       <img width="4000" src="static/images/main-c.jpg">
