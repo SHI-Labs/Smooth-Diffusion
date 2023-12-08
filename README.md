@@ -78,6 +78,12 @@ Coming soon.
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
+@article{guo2023smooth,
+  title={Smooth Diffusion: Crafting Smooth Latent Spaces in Diffusion Models},
+  author={Jiayi Guo and Xingqian Xu and Yifan Pu and Zanlin Ni and Chaofei Wang and Manushree Vasu and Shiji Song and Gao Huang and Humphrey Shi},
+  journal={arXiv preprint arXiv:2312.04410},
+  year={2023}
+}
 ```
 
 
