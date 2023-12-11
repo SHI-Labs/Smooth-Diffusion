@@ -55,7 +55,7 @@ Coming soon.
 <img src="asserts/Picture3.jpg" width="1080px"/>
 </p>
 
-> Intergrating the above Smooth LoRA into other community models.
+> Integrating the above Smooth LoRA into other community models.
 
 <p align="center">
 <img src="asserts/Picture4.jpg" width="1080px"/>
