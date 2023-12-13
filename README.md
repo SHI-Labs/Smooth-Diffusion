@@ -1,6 +1,6 @@
 # Smooth Diffusion
 
-This repository is the official Pytorch implementation for [Smooth Diffusion](https://arxiv.org/pdf/2312).
+This repository is the official Pytorch implementation for [Smooth Diffusion](https://arxiv.org/abs/2312.04410).
 
 [![Project Page](https://img.shields.io/badge/Project-Website-orange)](https://shi-labs.github.io/Smooth-Diffusion/) [![arXiv](https://img.shields.io/badge/arXiv-SmoothDiffusion-b31b1b.svg)](https://arxiv.org/abs/2312.04410) 
 
