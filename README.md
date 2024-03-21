@@ -16,7 +16,7 @@ This repository is the official Pytorch implementation for [Smooth Diffusion](ht
 > [Humphrey Shi](https://www.humphreyshi.com)
 
 
-https://github.com/SHI-Labs/Smooth-Diffusion/assets/53193040/b5fcf520-1b8b-4f17-97a3-1a06d440ec25
+https://github.com/JiayiGuo821/Smooth-Diffusion-Dev/assets/53193040/f965242f-968e-4e62-845c-dd3374a70fcf
 
 
 <p align="center">
@@ -24,27 +24,49 @@ https://github.com/SHI-Labs/Smooth-Diffusion/assets/53193040/b5fcf520-1b8b-4f17-
 </p>
 
 <p align="center">
-<img src="asserts/Picture1.jpg" width="1080px"/>
+<img src="assets/repo_figures/Picture1.jpg" width="1080px"/>
 Our method formally introduces latent space smoothness to diffusion models like Stable Diffusion. This smoothness dramatically aids in: 1) improving the continuity of transitions in image interpolation, 2) reducing approximation errors in image inversion, and 3) better preserving unedited contents in image editing.
 </p>
 
 ## News
+- [2024.03.20] Code, model, and demo released!
+- [2024.02.27] Smooth Diffusion is accepted by CVPR 2024!
 - [2023.12.08] Paper released!
 
 ## ToDo
-- [ ] Release code and model weights
-- [ ] Gradio Demo
+- ☑️ Release code and model weights
+- ☑️ Gradio Demo
 
 
 ## Overview
 <p align="center">
-<img src="asserts/Picture2.jpg" width="1080px"/>
+<img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
 <strong>Smooth Diffusion</strong> (c) enforces the ratio between the variation of the input latent and the variation of the output prediction is a constant. We propose <strong>Training-time Smooth Diffusion</strong> (d) to optimize a "single-step snapshot" of the variation constraint in (c). DM: Diffusion model. Please refer to our paper for additional details.
 </p>
 
 ## Code
-Coming soon.
+### Setup
+```
+conda create --name dev python=3.9
+conda activate dev
+pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
+pip install -r requirements.txt
+```
 
+### Inference (Gradio Demo)
+We provide a WebUI empowered by [Gradio](https://github.com/gradio-app/gradio). Start the WebUI with the following command:
+```
+python app.py
+```
+
+### Training
+We provide scripts for data downloading and training. Unfortunately, the LAION dataset is currently unavailable due to safety review. [[Offcial note by LAIOM.ai](https://laion.ai/notes/laion-maintanence/)]
+```
+# Download LAION aesthetics 6.5+
+python download_regularization_images.py
+# Train smooth LoRA
+bash train.sh
+```
 
 ## Visualizations
 ### Image Interpolation  
@@ -52,25 +74,25 @@ Coming soon.
 > Using the Smooth LoRA trained atop Stable Diffusion V1.5.
 
 <p align="center">
-<img src="asserts/Picture3.jpg" width="1080px"/>
+<img src="assets/repo_figures/Picture3.jpg" width="1080px"/>
 </p>
 
 > Integrating the above Smooth LoRA into other community models.
 
 <p align="center">
-<img src="asserts/Picture4.jpg" width="1080px"/>
+<img src="assets/repo_figures/Picture4.jpg" width="1080px"/>
 </p>
 
 ### Image Inversion
 
 <p align="center">
-<img src="asserts/Picture5.jpg" width="1080px"/>
+<img src="assets/repo_figures/Picture5.jpg" width="1080px"/>
 </p>
 
 ### Image Editing
 
 <p align="center">
-<img src="asserts/Picture6.jpg" width="1080px"/>
+<img src="assets/repo_figures/Picture6.jpg" width="1080px"/>
 </p>
 
 ## Citation
@@ -78,14 +100,18 @@ Coming soon.
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
-@article{guo2023smooth,
+@InProceedings{guo2023smooth,
   title={Smooth Diffusion: Crafting Smooth Latent Spaces in Diffusion Models},
   author={Jiayi Guo and Xingqian Xu and Yifan Pu and Zanlin Ni and Chaofei Wang and Manushree Vasu and Shiji Song and Gao Huang and Humphrey Shi},
-  journal={arXiv preprint arXiv:2312.04410},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   year={2023}
 }
 ```
 
+## Acknowledgements
+We thank [Diffusers](https://huggingface.co/docs/diffusers/en/index) (LoRA finetuning) and [AlignSD](https://huggingface.co/docs/diffusers/en/index) (data downloading).
 
 ## Contact
 guo-jy20 at mails dot tsinghua dot edu dot cn
+
+
