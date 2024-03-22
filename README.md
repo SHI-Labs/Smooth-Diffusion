@@ -47,8 +47,8 @@ Our method formally introduces latent space smoothness to diffusion models like 
 ## Code
 ### Setup
 ```
-conda create --name dev python=3.9
-conda activate dev
+conda create --name smooth-diffusion python=3.9
+conda activate smooth-diffusion
 pip install torch==2.0.0 torchvision==0.15.1 torchaudio==2.0.1
 pip install -r requirements.txt
 ```

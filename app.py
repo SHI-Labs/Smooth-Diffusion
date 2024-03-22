@@ -67,7 +67,6 @@ default.fps = 16
 default.nullinv_inner_step = 10
 default.threshold = 0.8
 default.variation = 0.8
-default.port = 8505
 
 ##########
 # helper #
@@ -960,7 +959,4 @@ if __name__ == '__main__':
             with gr.Tab('Image Editing'):
                 interface_imedit(wrapper_obj)
 
-        port = args.port if args.port is not None else default.port
-        ipaddr = os.popen("curl icanhazip.com").read().strip()
-        print('LINK: http://{}:{}'.format(ipaddr, port))
-        demo.launch(server_name="0.0.0.0", server_port=port)
+        demo.launch()
