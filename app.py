@@ -42,7 +42,7 @@ choices.diffuser = OrderedDict([
 
 choices.lora = OrderedDict([
     ['empty', ""],
-    ['Smooth-LoRA-v1', 'assets/models/pytorch_model.bin'],
+    ['Smooth-LoRA-v1', 'assets/models/smooth_lora.safetensors'],
 ])
 
 choices.scheduler = OrderedDict([
@@ -283,7 +283,7 @@ class wrapper(object):
         self.net.safety_checker = None
         if tag_lora != 'empty':
             self.net.unet.load_attn_procs(
-                choices.lora[tag_lora], use_safetensors=False,)
+                choices.lora[tag_lora], use_safetensors=True,)
         self.tag_diffuser = tag_diffuser
         self.tag_lora = tag_lora
         return tag_diffuser, tag_lora
@@ -959,4 +959,4 @@ if __name__ == '__main__':
             with gr.Tab('Image Editing'):
                 interface_imedit(wrapper_obj)
 
-        demo.launch()
+        demo.launch(share=True)
