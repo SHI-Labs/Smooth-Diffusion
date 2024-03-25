@@ -2,7 +2,7 @@
 
 This repository is the official Pytorch implementation for [Smooth Diffusion](https://arxiv.org/abs/2312.04410).
 
-[![Project Page](https://img.shields.io/badge/Project-Website-orange)](https://shi-labs.github.io/Smooth-Diffusion/) [![arXiv](https://img.shields.io/badge/arXiv-SmoothDiffusion-b31b1b.svg)](https://arxiv.org/abs/2312.04410) 
+[![Huggingface space](https://img.shields.io/badge/🤗-Huggingface%20Space-cyan.svg)](https://huggingface.co/spaces/shi-labs/Smooth-Diffusion)[![Project Page](https://img.shields.io/badge/Project-Website-orange)](https://shi-labs.github.io/Smooth-Diffusion/) [![arXiv](https://img.shields.io/badge/arXiv-SmoothDiffusion-b31b1b.svg)](https://arxiv.org/abs/2312.04410) 
 
 > **Smooth Diffusion: Crafting Smooth Latent Spaces in Diffusion Models**  
 > [Jiayi Guo](https://www.jiayiguo.net)\*,
@@ -29,6 +29,7 @@ Our method formally introduces latent space smoothness to diffusion models like 
 </p>
 
 ## News
+- [2024.03.25] Our demo is available on 🤗 [Huggingface Space](https://huggingface.co/spaces/shi-labs/Smooth-Diffusion)!
 - [2024.03.20] Code, model, and demo released!
 - [2024.02.27] Smooth Diffusion is accepted by CVPR 2024!
 - [2023.12.08] Paper released!
