@@ -100,11 +100,11 @@ bash train.sh
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
-@InProceedings{guo2023smooth,
+@InProceedings{guo2024smooth,
   title={Smooth Diffusion: Crafting Smooth Latent Spaces in Diffusion Models},
   author={Jiayi Guo and Xingqian Xu and Yifan Pu and Zanlin Ni and Chaofei Wang and Manushree Vasu and Shiji Song and Gao Huang and Humphrey Shi},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2023}
+  year={2024}
 }
 ```
 
