@@ -29,6 +29,7 @@ Our method formally introduces latent space smoothness to diffusion models like 
 </p>
 
 ## News
+- [2024.09.24] Since SD 1.5 is currently unavailable, we set Realistic_Vision_V2.0 as our default model.
 - [2024.03.25] Our demo is available on 🤗 [Huggingface Space](https://huggingface.co/spaces/shi-labs/Smooth-Diffusion)!
 - [2024.03.20] Code, model, and demo released!
 - [2024.02.27] Smooth Diffusion is accepted by CVPR 2024!
@@ -61,7 +62,7 @@ python app.py
 ```
 
 ### Training
-We provide scripts for data downloading and training. Unfortunately, the LAION dataset is currently unavailable due to safety review. [[Offcial note by LAIOM.ai](https://laion.ai/notes/laion-maintanence/)]
+We provide scripts for data downloading and training. Unfortunately, the LAION dataset is currently unavailable due to safety review. [[Offcial note by LAIOM.ai](https://laion.ai/notes/laion-maintanence/)] (Update: LAION is available now. Have fun!)
 ```
 # Download LAION aesthetics 6.5+
 python download_regularization_images.py
