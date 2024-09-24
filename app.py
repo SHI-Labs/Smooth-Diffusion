@@ -56,7 +56,7 @@ choices.inversion = OrderedDict([
 ])
 
 default = edict()
-default.diffuser = 'SD-v1-5'
+default.diffuser = 'RR-v2'
 default.scheduler = 'DDIM'
 default.lora = 'Smooth-LoRA-v1'
 default.inversion = 'NTI'
